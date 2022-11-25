@@ -5,11 +5,12 @@ function Info(props)
 {
     let obj= {};
 
-    Data.map((info)=>{
+    obj = Data.map((info)=>{
         if(info.algo === props.algo)
         {
-            obj = info;
+            return info;
         }
+        return {};
     })
 
     return <div className="info">
@@ -23,7 +24,7 @@ function Info(props)
             <span>Space Complexity : {obj.spacec}</span> 
         </div>
         <div className='key2'> 
-            <span><a target = "_blank" href={obj.url}><img className = "more-info" src = "./moreInfo.png"/></a></span> 
+            <span><a target = "_blank" rel="noopener noreferrer" href={obj.url}><img className = "more-info" src = "./moreInfo.png" alt =""/></a></span> 
         </div>
     </div>
 }

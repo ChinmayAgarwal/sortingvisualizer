@@ -6,7 +6,7 @@ const Navbar = ({ handleLength, handleSpeed, handleAlgo, generateRandomArray, ha
     return (
         <nav>
             {/* <div className='nav-brand'>Sorting Visualizer</div> */}
-            <img className = 'nav-brand' src = "./newLogo.png"/>
+            <img className = 'nav-brand' src = "./newLogo.png" alt="logo"/>
             <div className='toolbox'>
                 <div>
                     <div className='group speed'>
